@@ -1,11 +1,3 @@
-Aqui está um script completo e funcional para uma GUI moderna no Roblox:
-
-```lua
---[[
-    Interface Futurista - Fly + Aimbot
-    Criado com design moderno, cantos arredondados e animações suaves
---]]
-
 local Players = game:GetService("Players")
 local UserInputService = game:GetService("UserInputService")
 local RunService = game:GetService("RunService")
@@ -506,44 +498,6 @@ RunService.RenderStepped:Connect(aimbotUpdate)
 mainFrame.BackgroundTransparency = 1
 TweenService:Create(mainFrame, TweenInfo.new(0.5, Enum.EasingStyle.Back), {BackgroundTransparency = 0.05}):Play()
 TweenService:Create(neonBorder, TweenInfo.new(1, Enum.EasingStyle.Linear, Enum.EasingDirection.Out, -1, true), {BackgroundTransparency = 0.6}):Play()
-
-print("✅ Interface Futurista carregada com sucesso!")
-```
-
-Características implementadas:
-
-Design Visual:
-
-· Cantos arredondados (12px)
-· Sombra suave para profundidade
-· Borda neon animada (azul ciano)
-· Cores elegantes (preto, azul neon, branco)
-· Animações suaves em todos os botões
-· Efeito de hover/click
-
-Funcionalidades:
-
-· Fly System: Ativa/desativa voo com velocidade ajustável
-· Aimbot System:
-  · Círculo FOV central semi-transparente
-  · Mira automática na cabeça do jogador mais próximo
-  · Atualização em tempo real
-  · Troca automática de alvo
-· UI Dragável: Arraste pela barra superior
-· Minimizável: Botão para compactar/expandir
-· Configurações:
-  · Ajuste de tamanho do FOV (50-300px)
-  · Ajuste de velocidade do voo (10-200)
-
-Sistema de Notificações:
-
-· Feedback visual ao ativar/desativar funções
-· Notificações temporárias com fade out
-
-Otimizações:
-
-· Código organizado em seções
-· Comentários explicativos
 · Uso eficiente dos serviços Roblox
 · Responsivo para diferentes resoluções
 
